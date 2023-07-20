@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>ToDo List App</title>
+        <link rel="stylesheet" href="stylecss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body>
+        <div class="bg">
+            <div class="app">
+                <section class="greeting">
+                    <h1 class="title">
+                        Hey!!!</h1>
+                     <h1>What's up, <input type="text" id="name" placeholder="Name here" />
+                    </h1>
+                </section>
+                <div class="wrapper">
+                    <h3>TO-DO LIST APP</h3>
+                    <div class="inputField">
+                        <h4>What's on your todo?</h4>
+                        <input type="text" placeholder="e.g. Do something" id="content" />
+                    </div>
+                </div>
+                    <button class="addbtn">Add</button>
+                    <button class="btn"><i class="fas fa-trash"></i></button>
+                    <div class="ToDo">
+                    <h4>TODO LIST</h4>
+                    <ul class="todolist">
+                        <li onclick="remove(this)">Do Something</li>
+                        <li onclick="remove(this)">Upload Documents</li>
+                        <li onclick="remove(this)">Compile videos</li>
+                        </ul>
+                </div>
+                <div class="footer">
+                    <span>You have <span class="pendingTasks"></span> pending tasks</span>
+                    
+                    <button>Clear All</button>
+                </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+    </body>
+</html>
